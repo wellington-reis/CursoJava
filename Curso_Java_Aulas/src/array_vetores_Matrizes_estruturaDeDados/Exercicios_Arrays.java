@@ -351,7 +351,7 @@ public class Exercicios_Arrays {
 
 
 		}
-		System.out.println("--------------------------------------------------------");
+		
 
 		System.out.println("================fim Exercicio  ============================");
 
@@ -360,9 +360,19 @@ public class Exercicios_Arrays {
 		//AULA13_14_String_eo_Método_Split_para_Array
 		
 		// CRIE UMA VARIAVEL DO TIPO STRING COM NOME, CURSO, NOTA1, NOTA2, NOTA3, NOTA4.
-		String ArrayAluno = "wellington, Java, 40, 80, 70, 60";
+		String texto = "wellington, Java, 40, 80, 70, 60";
+		
 		// CRIE UM ARRAY COM OS VALORES DA VARIAVEL ULTILIZANDO O METODO .SPLIT.
+		
+		String[] arrayTexto = texto.split(",");
+		
 		// PERCORRA O ARRAY E IMPRIMA NO CONSOLE
+		
+		for (int pos = 0; pos < arrayTexto.length; pos++) {
+			
+			System.out.println(" O Array de texto he: " + arrayTexto[pos]);
+			
+		}
 	}
 
 }
