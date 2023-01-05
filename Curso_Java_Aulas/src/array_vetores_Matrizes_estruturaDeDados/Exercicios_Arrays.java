@@ -1,5 +1,9 @@
 package array_vetores_Matrizes_estruturaDeDados;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javax.swing.JOptionPane;
 
 import projeto_classes.Aluno;
@@ -349,30 +353,58 @@ public class Exercicios_Arrays {
 
 			}
 
-
 		}
-		
 
 		System.out.println("================fim Exercicio  ============================");
 
 		// =============================================================================
-		
-		//AULA13_14_String_eo_Método_Split_para_Array
-		
+
+		// AULA13_14_String_eo_Método_Split_para_Array
+
 		// CRIE UMA VARIAVEL DO TIPO STRING COM NOME, CURSO, NOTA1, NOTA2, NOTA3, NOTA4.
 		String texto = "wellington, Java, 40, 80, 70, 60";
-		
+
 		// CRIE UM ARRAY COM OS VALORES DA VARIAVEL ULTILIZANDO O METODO .SPLIT.
-		
+
 		String[] arrayTexto = texto.split(",");
-		
+
 		// PERCORRA O ARRAY E IMPRIMA NO CONSOLE
-		
+
 		for (int pos = 0; pos < arrayTexto.length; pos++) {
-			
+
 			System.out.println(" O Array de texto he: " + arrayTexto[pos]);
+
+						
+		}
+		
+		System.out.println("================fim Exercicio  ============================");
+
+		// =============================================================================
+
+		//AULA_13_15_Conversão_Array_para_Lista_e_Lista_para_Array
+		
+		// 01- Converta o "arrayTexto" criado acima em  uma lista 
+		List<String> list = Arrays.asList(arrayTexto); 
+		
+		//02- Varra a lista e imprima no console.
+		
+		System.out.println("Essa é a impressão da lista");
+
+		for (String string : list) {
+			
+			System.out.println(string);
 			
 		}
+		
+		//03 - Reconverta o arrayTexto para um Array.
+		
+		String[] conversãoArray = list.toArray(new String[6]);
+		
+		//04 - Varra o Array e imprima no console.
+		
+		
+		
+	
 	}
 
 }
