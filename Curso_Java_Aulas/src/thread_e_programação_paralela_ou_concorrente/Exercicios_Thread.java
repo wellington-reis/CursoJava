@@ -22,6 +22,7 @@ public class Exercicios_Thread {
 		//observar a thread ser execultada.
 		
 		System.out.println("==========FIM DO EXERCIO=================");
+		
 		//===================================================================
 		
 		
