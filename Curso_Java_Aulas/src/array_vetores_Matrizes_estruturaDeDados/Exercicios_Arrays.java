@@ -15,41 +15,73 @@ public class Exercicios_Arrays {
 
 		// Exercicio:// Aula 13-2- Criando o Primeiro Array
 
-		// vamos istanciar um array "notas" com 4 elementos.fazer a descrição.
+		// 01- vamos istanciar um array "notas" com 4 elementos.fazer a descrição.
 
-		// vamos add os valores dos elementos. e faze sua descrição.
+		double[] notas = new double[4];
+		// Istanciando um array tipo double com referente "notas" recebe uma array de 4
+		// posiçoes
 
-		// imprimir no console
+		// 02- vamos add os valores dos elementos. e faze sua descrição.
 
-		// Debugar o codigo.
-		
-		System.out.println("================fim Exercicio  ============================");
+		notas[0] = 15;
+		notas[1] = 20;
+		notas[2] = 25;
+		notas[3] = 30;
+
+		// 03- imprimir no console
+
+		System.out.println(notas[0]);
+		System.out.println(notas[1]);
+		System.out.println(notas[2]);
+		System.out.println(notas[3]);
+
+		// 04- Debugar o codigo.
+
+		System.out.println("================fim Exercicio============================");
 
 		// ======================================================================
 
 		// AULA 13_3 - Recuperando valores no Array
 
-		// Vamos recuperar o valor do Array "notas"
+		// Vamos varrer o Array "notas" e recuperar os valores nas posiçoes.
+		for (int pos = 0; pos < notas.length; pos++) {
 
-		// Vamos imprimir no console.
+			// Vamos imprimir no console.
+			System.out.println("O valor da nota é : " + notas[pos]);
+
+		}
 
 		// debugar o codigo.
-		
-		System.out.println("================fim Exercicio  ============================");
+
+		System.out.println("================fim Exercicio===========================");
 
 		// =======================================================================
 
 		// AULA13_4_Entrada_e_Leitura_FormaDinâmica
 
-		// pedir o usuario para colocar a quantidade de elementos do Array
+		// pedir o usuario para colocar a quantidade de posiçoes do Array
+		
+		String qtd = JOptionPane.showInputDialog("Quantas posiçoes tera o Array ? ");
 
 		// instanciar um novo array com a quantidade de posiçoes ditas pelo usuario
-
-		// pedir o usuario para colocar os valores de cada elemento.
-
-		// Recuperar os valores do array e imprimi-los no console.
 		
-		System.out.println("================fim Exercicio  ============================");
+		double[] notas2 = new double[Integer.parseInt(qtd)];
+
+		// Recuperar os valores do array
+		
+		for (int pos = 0; pos < notas2.length; pos++) {
+			
+			// pedir o usuario para colocar os valores de cada elemento.
+			String chooseoption = JOptionPane.showInputDialog("Qual o valor da nota ? " + (pos+1));
+			
+			notas2[pos] = Double.valueOf(chooseoption); 
+			
+			// imprimir no console o valor e a posição do Array
+			System.out.println(" A nota na posição " + pos + " é = " + notas2[pos]);
+			
+		}
+
+		System.out.println("================fimExercicio============================");
 
 		// =============================================================================
 
@@ -57,12 +89,19 @@ public class Exercicios_Arrays {
 
 		// 01- Criar um array com implementação de dados diretos com dados de diferente
 		// tipos
+		
+		String[] notas3 = {"wellington", "Java","40","50","60","70"};
 
-		// 02- Recuperar os dados do array
+		// 02- Varrer e Recuperar os dados do array
+		
+		for (int pos = 0; pos < notas3.length; pos++) {
+			
+			// 03- imprimir no console
+			System.out.println("Os Dados do Array direto na posição " + pos +" é = " + notas3[pos]);
+			
+		}
 
-		// 03- imprimir no console
-
-		System.out.println("================fim Exercicio  ============================");
+		System.out.println("================fimExercicio============================");
 
 		// ================================================================================
 
@@ -71,20 +110,46 @@ public class Exercicios_Arrays {
 		// 13_6_Adicionando_o_array_de_notas_dentro_da_disciplina 26/12
 
 		// 1-Instanciar um objeto aluno com os
+		Aluno aluno = new Aluno();
 
 		// 1.1-Setar os atributos de : Nome, Escola, Idade.
+		
+		aluno.setNome("Wellington");
+		aluno.setIdade(42);
+		aluno.setNomeEscola("Jdev");
 
 		// 2-Instanciar uma lista de disciplina
+		
+		Disciplina disciplina = new Disciplina();
+		Disciplina disciplina1 = new Disciplina();
+		Disciplina disciplina2 = new Disciplina();
 
 		// 2.1-Instanciar o array de notas.
+		
+		double[] notasJava = {45.5, 30.3, 25.5, 35.0};
+		double[] notasLogica = {45.5, 30.3, 25.5, 35.0};
+		double[] notasSpring = {45.5, 30.3, 25.5, 35.0};
 
 		// 2.2-Setar a lista com o Nome e os valores do array de notas.
+		
+		disciplina.setMateria("Java");
+		disciplina.setNotasvetor(notasJava);
+		
+		disciplina1.setMateria("Logica Programação");
+		disciplina1.setNotasvetor(notasLogica);
+		
+		disciplina2.setMateria("SpringBoot");
+		disciplina2.setNotasvetor(notasSpring);
 
 		// 3-Adicionar a disciplina ao objeto Aluno.
+		
+		aluno.getDisciplinas().add(disciplina);
+		aluno.getDisciplinas().add(disciplina1);
+		aluno.getDisciplinas().add(disciplina2);
 
 		// 4- criar mais 2 disciplinas.ok
-		
-		System.out.println("================fim Exercicio  ============================");
+
+		System.out.println("================fimExercicio============================");
 
 		// =========================================================================
 
@@ -102,9 +167,12 @@ public class Exercicios_Arrays {
 		// 3.1 - imprimir no console o elemento e o valor do Array de nota para cada
 		// disciplina.
 
+		// System.out.println("---------------------------------------------------------");
+
 		// Debugar o codigo.
 
-		System.out.println("================fim Exercicio  ============================");
+		// System.out.println("================fim
+		// Exercicio============================");
 
 		// ===========================================================================
 
@@ -115,14 +183,11 @@ public class Exercicios_Arrays {
 		// 02 - Varrer a lista de disciplinas
 
 		// 03 - Varrer o Array de notas
-
 		// 04- imprimir a maior nota da disciplina
-
 		// 05- imprimir a menor nota da disciplina
-
-		System.out.println("================fim Exercicio  ============================");
-
 		// Debugar o codigo.
+		// System.out.println("================fim
+		// Exercicio============================");
 
 		// ==============================================================================
 
@@ -135,16 +200,12 @@ public class Exercicios_Arrays {
 		// 02-Add o Aluno na posicao do array
 
 		// 03-Varrendo o array do objeto Aluno e imprimir o nome do aluno
-
 		// 04-Varrendo a Lista de Disciplinas e imprimir as disciplinas
-
 		// 05-Varrendo o Array de Notas
+		// 06-Adicionar mais um objeto aluno no array - ok
 
-		// 06-Encontrando a maior nota
-
-		// 07-imprimindo a maior e menor nota.
-
-		System.out.println("================fim Exercicio  ============================");
+		// System.out.println("================fim Exercicio
+		// ============================");
 		// ======================================================================
 
 		// =============== EXERCICIOS DA SEMANA 02/01 A 06/01
@@ -154,13 +215,11 @@ public class Exercicios_Arrays {
 		// 01- CRIE UMA MATRIZ 2X3
 
 		// 1.1-FAÇA SUA Descrição :
-		// "matrizAluno" recebe uma matriz do tipo double com 3 elementos e 3 posiçoes
+		// "semestre " recebe uma matriz do tipo double com 2 elementos e 3 posiçoes
 
 		// 02-Adicione dados a matriz
 
 		// DEBUG O CODIGO.
-
-		System.out.println("================fim Exercicio  ============================");
 
 		// =============================================================================
 
@@ -169,8 +228,8 @@ public class Exercicios_Arrays {
 		// 01- Vamos ler a Matriz do ultimo exercicio.
 
 		// 02- Separar as Matrizes
-
-		System.out.println("================fim Exercicio  ============================");
+		// System.out.println("================fim
+		// Exercicio============================");
 
 		// =============================================================================
 
@@ -181,8 +240,6 @@ public class Exercicios_Arrays {
 		// CRIE UM ARRAY COM OS VALORES DA VARIAVEL ULTILIZANDO O METODO .SPLIT.
 
 		// PERCORRA O ARRAY E IMPRIMA NO CONSOLE
-
-		System.out.println("================fim Exercicio  ============================");
 
 		// =============================================================================
 
@@ -196,7 +253,7 @@ public class Exercicios_Arrays {
 
 		// 04 - Varra o Array e imprima no console.
 
-		System.out.println("================fim Exercicio  ============================");
+		// System.out.println("================fimExercicio============================");
 
 		// =============================================================================
 
