@@ -39,7 +39,7 @@ public class AULA14_5_Thread_em_objeto_e_o_Runnable {
 		}
 	};
 	
-	//===============================================================
+	//===================================================================
 	
 	private static Runnable thread2 = new Runnable() {
 
