@@ -51,6 +51,7 @@ public class Exercicios_Thread {
 
 		// =============================================================
 
+		
 		// AULA14_5_Thread_em_objeto_e_o_Runnable
 
 		// Vamos criar o objeto e o Runnable do codigo acima
@@ -68,4 +69,5 @@ public class Exercicios_Thread {
 		// =============================================================
 
 	}
+	
 }
