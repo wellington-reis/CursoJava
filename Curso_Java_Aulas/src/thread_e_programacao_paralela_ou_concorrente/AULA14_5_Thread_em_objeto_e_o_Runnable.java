@@ -1,4 +1,4 @@
-package thread_e_programação_paralela_ou_concorrente;
+package thread_e_programacao_paralela_ou_concorrente;
 
 public class AULA14_5_Thread_em_objeto_e_o_Runnable {
 

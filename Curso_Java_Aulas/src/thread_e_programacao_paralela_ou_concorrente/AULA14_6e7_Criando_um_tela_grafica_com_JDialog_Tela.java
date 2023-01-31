@@ -1,4 +1,4 @@
-package thread_e_programação_paralela_ou_concorrente;
+package thread_e_programacao_paralela_ou_concorrente;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
@@ -15,7 +15,7 @@ import javax.swing.JTextField;
 
 
 // Vamos extender a "JDialog que é uma extensão do javax.Swing esse que e um frameWork do java . "
-public class AULA14_6e7_Criando_um_tela_gráfica_com_JDialog_Tela extends JDialog {
+public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog {
 	
 	
 	private JPanel jPanel = new JPanel(new GridBagLayout());//Painel de componentes.
@@ -41,7 +41,7 @@ public class AULA14_6e7_Criando_um_tela_gráfica_com_JDialog_Tela extends JDialog
 	/*Sempre que for iniciado um objeto de tela todas as informaçoes padroes devemos 
 	 *Colocar dentro de um método construtor.
 */
-	public AULA14_6e7_Criando_um_tela_gráfica_com_JDialog_Tela() {/*Execulta oque deve ser iniciado na execução */
+	public AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela() {/*Execulta oque deve ser iniciado na execução */
 		
 		// Cria o titulo da Tela
 		setTitle("Minha tela de Time com Thread");

@@ -1,6 +1,6 @@
-package thread_e_programação_paralela_ou_concorrente;
+package thread_e_programacao_paralela_ou_concorrente;
 
-public class AULA14_6_Criando_um_tela_gráfica_com_JDialog_EXE {
+public class AULA14_6_Criando_um_tela_grafica_com_JDialog_EXE {
 
 	public static void main(String[] args) {
        	
@@ -9,7 +9,7 @@ public class AULA14_6_Criando_um_tela_gráfica_com_JDialog_EXE {
 		
 		*/
 		
-		AULA14_6e7_Criando_um_tela_gráfica_com_JDialog_Tela tela = new AULA14_6e7_Criando_um_tela_gráfica_com_JDialog_Tela();
+		AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela tela = new AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela();
 		//Vamos Excultar o projeto para verificar a criação da tela.
 		
 	 

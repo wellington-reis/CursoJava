@@ -1,4 +1,4 @@
-package thread_e_programação_paralela_ou_concorrente;
+package thread_e_programacao_paralela_ou_concorrente;
 
 import javax.swing.JOptionPane;
 

@@ -1,8 +1,8 @@
-package thread_e_programação_paralela_ou_concorrente;
+package thread_e_programacao_paralela_ou_concorrente;
 
 import javax.swing.JOptionPane;
 
-public class AULA14_2_Tempo_de_interrupção_com_Sleep {
+public class AULA14_2_Tempo_de_interrupcao_com_Sleep {
 
 	public static void main(String[] args) throws InterruptedException {
 		
