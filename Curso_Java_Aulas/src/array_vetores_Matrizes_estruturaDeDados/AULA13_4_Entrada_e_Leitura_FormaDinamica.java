@@ -2,7 +2,7 @@ package array_vetores_Matrizes_estruturaDeDados;
 
 import javax.swing.JOptionPane;
 
-public class AULA13_4_Entrada_e_Leitura_FormaDinâmica  {
+public class AULA13_4_Entrada_e_Leitura_FormaDinamica  {
 
 	/*
 	 * Iremos pedir agora para o usuario a quantidade de elementos que vai dentro do
@@ -13,7 +13,7 @@ public class AULA13_4_Entrada_e_Leitura_FormaDinâmica  {
 
 		String Elementos = JOptionPane.showInputDialog("Quantidade de Elementos?");
 
-		// Para Organização das aulas criaremos instancias diferentes.
+		// Para Organizaï¿½ï¿½o das aulas criaremos instancias diferentes.
 
 		double[] Notas = new double[Integer.parseInt(Elementos)];
 
@@ -26,7 +26,7 @@ public class AULA13_4_Entrada_e_Leitura_FormaDinâmica  {
 
 		for (int posArray = 0; posArray < Notas.length; posArray++) {
 
-			System.out.println("Nota " + (posArray + 1) + " é = " + Notas[posArray]);
+			System.out.println("Nota " + (posArray + 1) + " ï¿½ = " + Notas[posArray]);
 		}
 
 		System.out.println("======================== FIM DA AULA 13.4 ========================== ");

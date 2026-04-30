@@ -4,7 +4,7 @@ import projeto_classes.Aluno;
 import projeto_classes.Diretor;
 import projeto_classes.Secretario;
 
-public class TesteHerança {
+public class TesteHeranca {
 
 	public static void main(String[] args) {
 		Aluno aluno = new Aluno();

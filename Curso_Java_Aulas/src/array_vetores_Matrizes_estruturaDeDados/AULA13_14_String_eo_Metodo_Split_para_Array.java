@@ -1,10 +1,10 @@
 package array_vetores_Matrizes_estruturaDeDados;
 
-public class AULA13_14_String_eo_Método_Split_para_Array {
+public class AULA13_14_String_eo_Metodo_Split_para_Array {
 	
 	/* Split e uma rotina onde se pega um texto (String) e separa ele 
 	 * em Arrays.  
-	 * Os padrões de separação pode ser : ( , .  - _  / | ) */
+	 * Os padrï¿½es de separaï¿½ï¿½o pode ser : ( , .  - _  / | ) */
 	
 	public static void main(String[] args) {
 		// criaremos uma Variavel de String

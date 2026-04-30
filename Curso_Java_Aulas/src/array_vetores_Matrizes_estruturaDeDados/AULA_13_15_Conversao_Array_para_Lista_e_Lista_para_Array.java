@@ -5,7 +5,7 @@ package array_vetores_Matrizes_estruturaDeDados;
 import java.util.Arrays;
 import java.util.List;
 
-public class AULA_13_15_Conversão_Array_para_Lista_e_Lista_para_Array {
+public class AULA_13_15_Conversao_Array_para_Lista_e_Lista_para_Array {
 
 	public static void main(String[] args) {
 

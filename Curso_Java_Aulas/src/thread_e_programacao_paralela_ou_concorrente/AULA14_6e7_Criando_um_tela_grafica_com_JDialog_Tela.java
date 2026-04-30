@@ -14,34 +14,34 @@ import javax.swing.JTextField;
 
 
 
-// Vamos extender a "JDialog que é uma extensão do javax.Swing esse que e um frameWork do java . "
+// Vamos extender a "JDialog que ï¿½ uma extensï¿½o do javax.Swing esse que e um frameWork do java . "
 public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog {
 	
 	
 	private JPanel jPanel = new JPanel(new GridBagLayout());//Painel de componentes.
 	
-	// 1º componente criado da tela. 
-	private  JLabel descriçãoHora = new JLabel("Time Thread 1 ");// elemento no painel
+	// 1ï¿½ componente criado da tela. 
+	private  JLabel descricaoHora = new JLabel("Time Thread 1 ");// elemento no painel
 	
-	// 2º componente criado da tela. (AULA 14_7.1)
+	// 2ï¿½ componente criado da tela. (AULA 14_7.1)
 	private JTextField mostraTempo = new JTextField(); // elemento no painel
 	
-	// 3º componente criado da tela. (AULA 14_7.1)
-	private  JLabel descriçãoHora2 = new JLabel("Time Thread 2 ");// elemento no painel
+	// 3ï¿½ componente criado da tela. (AULA 14_7.1)
+	private  JLabel descricaoHora2 = new JLabel("Time Thread 2 ");// elemento no painel
 	
-	// 4º componente criado da tela. (AULA 14_7.1)
+	// 4ï¿½ componente criado da tela. (AULA 14_7.1)
 	private JTextField mostraTempo2 = new JTextField(); // elemento no painel
 	
-	// Criação dos botões "Start" e " Stop " ( AULA 14_8 )
+	// Criaï¿½ï¿½o dos botï¿½es "Start" e " Stop " ( AULA 14_8 )
 	
 	private JButton jButton = new JButton("Start");
 	
 	private JButton jButton2 = new JButton("Stop");
 	
-	/*Sempre que for iniciado um objeto de tela todas as informaçoes padroes devemos 
-	 *Colocar dentro de um método construtor.
+	/*Sempre que for iniciado um objeto de tela todas as informaï¿½oes padroes devemos 
+	 *Colocar dentro de um mï¿½todo construtor.
 */
-	public AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela() {/*Execulta oque deve ser iniciado na execução */
+	public AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela() {/*Execulta oque deve ser iniciado na execuï¿½ï¿½o */
 		
 		// Cria o titulo da Tela
 		setTitle("Minha tela de Time com Thread");
@@ -56,11 +56,11 @@ public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog
 		setLocationRelativeTo(null);/*foi passado "null" pq nao temos outra tela para ser 
 		relativo.
 		*/
-		//1º parte concluida.
+		//1ï¿½ parte concluida.
 		
 		//========================================================================
 		
-		// 2º parte
+		// 2ï¿½ parte
 		
 		//AULA14_7 - Conhecendo o GridBagConstraints gerenciador de posicionamento e layout
 		
@@ -68,10 +68,10 @@ public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog
 		
 		/*Agora iremos construir os dados internos de nossa tela usando um 
 		 *controlador de direcionamento de objetos na tela. com isso podendo ter varios
-		 *objetos em localização diferente. 
+		 *objetos em localizaï¿½ï¿½o diferente. 
 		 */
 		
-		// É preciso instanciar este controlador de posicionamento do JavaSwit.
+		// ï¿½ preciso instanciar este controlador de posicionamento do JavaSwit.
 		GridBagConstraints gridBagConstraints = new GridBagConstraints();
 		
 		// Agora temos de definir parametros o controlador.
@@ -89,39 +89,39 @@ public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog
 		//(AULA 14_18.1) ANCORAGEM DOS ELEMENTOS A ESQUERDA DA TELA.
 		gridBagConstraints.anchor = gridBagConstraints.WEST;
 		
-		//(AULA 14_18.1) ESPAÇAMENTOS DOS ELEMENTOS NA TELA (TOP, LEFT, BOTTON, RIGHT).
+		//(AULA 14_18.1) ESPAï¿½AMENTOS DOS ELEMENTOS NA TELA (TOP, LEFT, BOTTON, RIGHT).
 		gridBagConstraints.insets = new Insets(5, 10, 5, 5);// SENTIDO ANT-HORARIO.
 		
 		
-		/*Voltando a imaginar uma estante de livro vai ser o primeiro vão. 
+		/*Voltando a imaginar uma estante de livro vai ser o primeiro vï¿½o. 
 		 *Que no Swing chamamos de painel ( JPanel )*/
 		
 		/*Iremos criar agora os paineis da tela
-		 *Abaixo da declaração da Classe fora do construtor criaremos uma extensão "JPanel - javax.swing" */
+		 *Abaixo da declaraï¿½ï¿½o da Classe fora do construtor criaremos uma extensï¿½o "JPanel - javax.swing" */
 		
 		
 		//Vamos dizer para o controlador o tamanho do nosso componente criado.
 		
 		//Componente 01
-		descriçãoHora.setPreferredSize(new Dimension(200, 25));
+		descricaoHora.setPreferredSize(new Dimension(200, 25));
 		
 		//Componente 02 ( AULA 14_7.1 )
 		mostraTempo.setPreferredSize(new Dimension(200, 25));
 		mostraTempo.setEditable(false);
 		
 		//Componente 03 ( AULA 14_7.1 )
-		descriçãoHora2.setPreferredSize(new Dimension(200, 25));
+		descricaoHora2.setPreferredSize(new Dimension(200, 25));
 		
 		//Componente 04 ( AULA 14_7.1 )
 		mostraTempo2.setPreferredSize(new Dimension(200, 25));
 		mostraTempo2.setEditable(false);
 		
 		
-		//Botão Start ( AULA 14_8 )
+		//Botï¿½o Start ( AULA 14_8 )
 		
 		jButton.setPreferredSize(new Dimension(92, 25));
 		
-		//Botão Stop ( AULA 14_8 )
+		//Botï¿½o Stop ( AULA 14_8 )
 		
 		jButton2.setPreferredSize(new Dimension(92, 25));
 		
@@ -129,21 +129,21 @@ public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog
 		
 		
 		/*Agora iremos adicionar o elemento no painel ( fora do construtor )
-		 *E também em qual painel ele sera colocado neste caso o 
+		 *E tambï¿½m em qual painel ele sera colocado neste caso o 
 		 *Controlador foi estipulado "X"= 0 e "Y" = 0. */
-		jPanel.add(descriçãoHora, gridBagConstraints);
+		jPanel.add(descricaoHora, gridBagConstraints);
 		
 		
 		/*//(AULA 14_7.1) Para que fique um elemento em cima do outro prescisa-mos 
-		 * mudar a posição do eixo "Y" acrescentando +1 
+		 * mudar a posiï¿½ï¿½o do eixo "Y" acrescentando +1 
 		 * No Controlador de posicionamento */
 		
-		gridBagConstraints.gridy ++ ;// mudança no grid"y" fazendo o elemento passar para linha de baixo.
+		gridBagConstraints.gridy ++ ;// mudanï¿½a no grid"y" fazendo o elemento passar para linha de baixo.
 		jPanel.add(mostraTempo, gridBagConstraints);
 		
 		// AULA 14_7.1 ADD NO PAINEL OS OUTROS 2 COMPONENTES.
 		gridBagConstraints.gridy ++ ;
-		jPanel.add(descriçãoHora2, gridBagConstraints);
+		jPanel.add(descricaoHora2, gridBagConstraints);
 		
 		gridBagConstraints.gridy ++ ;
 		jPanel.add(mostraTempo2, gridBagConstraints);
@@ -159,19 +159,19 @@ public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog
 		
 		//===========================================================================
 	
-		/* 3° PARTE - AULA 14_8 ADICIONANDO BOTOES JBUTTON */
+		/* 3ï¿½ PARTE - AULA 14_8 ADICIONANDO BOTOES JBUTTON */
 		
 		/* Agora Iremos adicionar botoes em nossa tela para controlar a nossas Threads.
 		 * Criaremos mais 2 elementos na nossa tela ( fora do Construtor ).
 		 * "OBS1"- Teremos um problema no alinhamento ja que temos 2 Botoes ocupando 
 		 * 2 colunas ao inves de linhas como era nos elementos acima. 
-		 * Então teremos de informar o gerenciador que os elementos ocuparam o
-		 * espaço de  2 colunas . 
-		 * "OBS2" - agora informare-mos ao gerenciador que os 2 botoes vão ocupar o 
-		 * espaço de 1 coluna.
+		 * Entï¿½o teremos de informar o gerenciador que os elementos ocuparam o
+		 * espaï¿½o de  2 colunas . 
+		 * "OBS2" - agora informare-mos ao gerenciador que os 2 botoes vï¿½o ocupar o 
+		 * espaï¿½o de 1 coluna.
 		 * 14_8.1 - AGORA IREMOS AJUSTAR EM NOSSO GERENCIADOR A 
-		 * ANCORAGEM E OS ESPAÇOS ENTRE  OS COMPONENTES (TOP, LEFT, BOTTON, RIGHT).
-		 * 14_8.2 - IREMOS AGORA TRAVAR OS CAMPOS DE IMPUT PARA NAO HAVER DIGITAÇÃO.*/
+		 * ANCORAGEM E OS ESPAï¿½OS ENTRE  OS COMPONENTES (TOP, LEFT, BOTTON, RIGHT).
+		 * 14_8.2 - IREMOS AGORA TRAVAR OS CAMPOS DE IMPUT PARA NAO HAVER DIGITAï¿½ï¿½O.*/
 		
 		
 		
@@ -180,6 +180,6 @@ public class AULA14_6e7_Criando_um_tela_grafica_com_JDialog_Tela extends JDialog
 		add(jPanel, BorderLayout.WEST);// BordeLayout.west e para ele ficar a esquerda.
 		
 		//Esse comando sempre deve ser o ultimo comando na ordem logica.
-		setVisible(true);// Permite a visualização da tela.	
+		setVisible(true);// Permite a visualizaï¿½ï¿½o da tela.	
 	}
 }

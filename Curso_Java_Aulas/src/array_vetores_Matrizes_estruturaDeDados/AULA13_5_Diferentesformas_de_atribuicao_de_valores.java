@@ -1,20 +1,20 @@
 package array_vetores_Matrizes_estruturaDeDados;
 
-public class AULA13_5_Diferentesformas_de_atribuição_de_valores {
+public class AULA13_5_Diferentesformas_de_atribuicao_de_valores {
 
 	// Veremos Nesta aula outras maneiras de se trabalhar com Arrays
 	public static void main(String[] args) {
 
 		/*
 		 * Vimos que para se criar um Array temos que instanciar-mos o tipo. a variavel
-		 * e a quantidade de posiçoes contidas no Array. 
+		 * e a quantidade de posiï¿½oes contidas no Array. 
 		 * Ex: double[] Valores = newdouble[4];
 		 * Agora veremos que podemos passar de forma direta: usando os vetores "{ }"Onde
-		 * os valores e os elementos são separadas por virgulas.
+		 * os valores e os elementos sï¿½o separadas por virgulas.
 		 *
 		 * Ex:
 		 */
-				  //posição:   0     1     2    3       
+				  //posiï¿½ï¿½o:   0     1     2    3       
 		double[] valores = { 10.3, 11.5, 13.3, 14.2 };
 		
 	/*OBS: 
@@ -28,15 +28,15 @@ public class AULA13_5_Diferentesformas_de_atribuição_de_valores {
 		String[] valores2 = {"Wellington", " 42 ", "10.1", "10.2"};
 	/*
 	 * Acima temos dados do tipo String, porem temos numeros em string que pode ser convertidos usando
-	 *"Interger . ParseInt para números inteiros" e double.
+	 *"Interger . ParseInt para nï¿½meros inteiros" e double.
 	 *value String para numeros double.
-	 *Para recuperar esses valores é igualmente ao array convencional.
+	 *Para recuperar esses valores ï¿½ igualmente ao array convencional.
 	 *OBS: CADA DADO DEVE SER REPRENSENTANDO POR UMA STRING SEPARADO POR VIRGULA.*/
 	
 		
 	for (int i = 0; i < valores2.length; i++) {
 		
-		System.out.println("Os Valores do array na posição " + i + "é = " + valores2[i]);
+		System.out.println("Os Valores do array na posiï¿½ï¿½o " + i + "ï¿½ = " + valores2[i]);
 		System.out.println("----------------------------");
 	}
 	
